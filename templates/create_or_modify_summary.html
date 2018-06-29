@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<title>Insert</title>
+</head>
+<body>
+  <h2>xlsx合作网站创建</h2>
+  <p>状态: {{data}}</p>
+  <form action="/summary/" method="POST">
+    <ul>
+      <li>
+        <p>1. 平台名称: (一般为平台简写)</p>
+        <input  name="plat_name"></input>
+      </li>
+      <li>
+        <p>2. xlsx文件的header的长度(数字)</p>
+        <input name="ncols"></input>
+      </li>
+      <li>
+        <p>3. 你要上传的sheet名字或名字列表用",’逗号分开"</p>
+        <textarea  name="sheets_name" rows="10" cols="80"></textarea>
+      </li>
+      <li>
+        <p>4. 请填写key/value 键值对信息(键为xlsx头部名称,值为你起的列名"英文或拼音")</p>
+        <textarea name="col_dict" rows="20" cols="80">
+        </textarea> 
+      </li>
+    </ul>
+    <input type="submit">提交</input>
+  </form>
+</body>

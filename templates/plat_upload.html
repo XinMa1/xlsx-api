@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Insert</title>
+</head>
+<body>
+  <h2>文件上传</h2>
+  <p>上传状态: {{ data }}</p>
+  <form action="/plat/upload/" method="POST" enctype="multipart/form-data">
+    <ul>
+      <li>
+        <p>平台名称: (一般为平台简写)</p>
+        <input  name="plat_name"  readonly=True></input>
+      </li>
+      <li>
+        <input type="file" name="xlsx_file">选择文件</input>
+      </li>
+    </ul>
+    <input type="submit">提交 </input>
+  </form>
+</body>
+
